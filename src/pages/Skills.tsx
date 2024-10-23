@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Code, Server, Database, Cpu, Zap } from 'lucide-react';
+import { Code, Server, Database, Cpu, Zap, } from 'lucide-react';
 
 interface Skill {
   id: number;
   name: string;
-  category: 'frontend' | 'backend' | 'database' | 'devops' | 'other';
+  category: 'frontend' | 'backend' | 'database' | 'devops' | 'other' | 'leadership & managment';
   proficiency: number;
   icon: React.ReactNode;
 }
@@ -15,11 +15,12 @@ const skills: Skill[] = [
   { id: 3, name: 'PostgreSQL', category: 'database', proficiency: 80, icon: <Database /> },
   { id: 4, name: 'Docker', category: 'devops', proficiency: 75, icon: <Cpu /> },
   { id: 5, name: 'Machine Learning', category: 'other', proficiency: 70, icon: <Zap /> },
+  { id: 5, name: 'Team Leaderships', category: 'other', proficiency: 70, icon: <Bag /> },
   // Add more skills as needed
 ];
 
 const Skills: React.FC = () => {
-  const [filter, setFilter] = useState<'all' | 'frontend' | 'backend' | 'database' | 'devops' | 'other'>('all');
+  const [filter, setFilter] = useState<'all' | 'frontend' | 'backend' | 'database' | 'devops' | 'other' | 'leadership & managment'>('all');
   const [animatedSkills, setAnimatedSkills] = useState<number[]>([]);
 
   useEffect(() => {

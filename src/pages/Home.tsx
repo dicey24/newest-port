@@ -47,13 +47,13 @@ const Home: React.FC = () => {
           }}
         >
           <h1 className="text-6xl font-bold mb-4 animate-fade-in-down">
-            Mohammed
+            Mohammed Disougi
           </h1>
           <h2 className="text-3xl mb-6 animate-fade-in-up">
-            <span className="hover:text-neon-blue transition-colors duration-300 cursor-pointer">Full-Stack Developer</span> & <span className="hover:text-neon-purple transition-colors duration-300 cursor-pointer">Control Engineer</span>
+            <span className="hover:text-neon-blue transition-colors duration-300 cursor-pointer">Software Developer</span> & <span className="hover:text-neon-purple transition-colors duration-300 cursor-pointer">Events Operation Management</span>
           </h2>
           <p className="text-xl mb-8 max-w-2xl animate-fade-in">
-            Crafting innovative solutions at the intersection of software and control systems
+            Crafting innovative solutions at the intersection of software and Event Management 
           </p>
           <Link
             to="/about"
@@ -84,7 +84,7 @@ const Home: React.FC = () => {
           </div>
           <div className="md:w-1/2 md:pl-8">
             <p className="text-lg mb-4">
-              As a passionate Full-Stack Developer and Control Engineer, I bring a unique blend of software expertise and systems thinking to every project.
+              As a passionate Software Developer and Event Manager, I bring a unique blend of software expertise and systems thinking to every project.
             </p>
             <div className="flex justify-center space-x-8">
               <div className="text-center">
